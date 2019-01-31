@@ -21,7 +21,7 @@ c.addEventListener('click', function(e){
     var xcor = e.clientX;
     var ycor = e.clientY;
     if (mode.innerHTML == "rectangle") {
-      ctx.fillRect(xcor-30, ycor-150, 90, 50);
+      ctx.fillRect(xcor-30, ycor-30, 10, 50);
     }
     else {
       ctx.beginPath();
