@@ -10,26 +10,29 @@ document.addEventListener("DOMContentLoaded",()=>{ // waits until page has loade
     const c = document.getElementById("slate");
     const ctx = c.getContext("2d");
 
+    // toggles between drawing rectangles and dots
     const tgl = document.getElementById("toggle");
     tgl.addEventListener("click",()=>{
 	drawRect = !drawRect;
     });
 
+    // clears canvas
     document.getElementById("clear").addEventListener("click",()=>{
 	ctx.clearRect(0,0,c.width,c.height);
     });
 
     c.addEventListener("click",(e)=>{
 	console.log(e);
-	var x = e.offsetX; // comments stimpky
-	var y = e.offsetY; // cordinates relative to target elemtn
+	// coordinates relative to target element
+	var x = e.offsetX; 
+	var y = e.offsetY; 
 	if(drawRect)
 	    ctx.fillRect(x-10,y-10,20,20);
 	else{
-	    ctx.beginPath(); // starts drawign area defined by ellipse
+	    ctx.beginPath(); // starts drawing area defined by ellipse
 	    ctx.ellipse(x,y,10,10,0,0,2*Math.PI); // Math.PI is actually pi
 	    ctx.fill(); // fills ellipse path
 	}
-	e.preventDefault();
+	e.preventDefault(); 
     });
 });
