@@ -26,11 +26,11 @@ pic.addEventListener('click', function(e) {
 
 var clear = document.getElementById("but_clear");
 clear.addEventListener('click', function(e) {
-  var rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
-  rect.setAttribute("width", pic.getAttribute("width"));
-  rect.setAttribute("height", pic.getAttribute("height"));
-  rect.setAttribute("fill", "white");
-  pic.appendChild(rect);
+    var rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+    rect.setAttribute("width", pic.getAttribute("width"));
+    rect.setAttribute("height", pic.getAttribute("height"));
+    rect.setAttribute("fill", "white");
+    pic.appendChild(rect);
     xPrev = -1
     yPrev = -1
 });
