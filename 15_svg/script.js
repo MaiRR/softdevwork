@@ -1,4 +1,9 @@
-//source: https://www.kaggle.com/unsdsn/world-happiness/version/2?fbclid=IwAR2OMugNWxf_LVIwhwR0MKFwBcbMxvodsi6ZYipiemKaWYz0qcmYQnv6qZQ
+// Team NoMansVoices -- Mai Rachlevsky && T Fabiha
+// SoftDev2 pd7
+// K15 -- Scattered
+// 2019-03-25
+
+// source: https://www.kaggle.com/unsdsn/world-happiness/version/2?fbclid=IwAR2OMugNWxf_LVIwhwR0MKFwBcbMxvodsi6ZYipiemKaWYz0qcmYQnv6qZQ
 // Data shows levels of happiness in comparison to different factors. We focused on its relation to trust in the government
 
 
